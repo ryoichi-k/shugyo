@@ -45,6 +45,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     text-decoration: none;
   }
+/* top-page-image */
+.big-bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(1564366_m.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
 
 /* universal */
 
@@ -65,14 +75,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 200px;
   }
   
-  .left h1 {
-    margin-top: 200px;
+  .right h1 {
+    padding-top: 100px;
     margin-right: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: right;
   }
 
-  .left h2 {
+  .right h2 {
       text-align: right;
       margin-right: 270px;
   }
