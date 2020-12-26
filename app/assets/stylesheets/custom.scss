@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
+    padding-top: 150px;
   }
   
   h2 {
@@ -86,3 +87,32 @@ h1, h2, h3, h4, h5, h6 {
       text-align: right;
       margin-right: 270px;
   }
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  /*@include box_sizing;*/
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
