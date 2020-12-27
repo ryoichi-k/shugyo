@@ -4,6 +4,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right ">
       <% if logged_in? %>
+        <li><%= link_to "プロフィール編集", edit_user_path(current_user) %></li>
         <li><%= link_to "ユーザー一覧", '#' %></li>
         <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
       <% else %>
