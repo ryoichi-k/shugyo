@@ -7,11 +7,14 @@
       <section class="micropost_form">
         <%= render 'shared/micropost_form' %>
       </section>
+      <section>
+        <%= render 'tasks/task_list' %>
+      </section>
     </aside>
-  <div class="col-md-8">
-    <h3>Micropost Feed</h3>
-    <%= render 'shared/feed' %>
-  </div>
+    <div class="col-md-8">
+      <h3>投稿一覧</h3>
+      <%= render 'shared/feed' %>
+    </div>
   </div>
 <% else %>
 <div class="big-bg">
