@@ -1,5 +1,5 @@
 <% if current_user.complete? %>
   <h4>あなたは卒業しています</h4>
 <% else %>
-  <%= link_to "目標達成", congratulations_path, class: 'btn btn-primary' %>
+<%= link_to "目標達成", congratulations_path, class: 'btn btn-primary' %>
 <% end %>
