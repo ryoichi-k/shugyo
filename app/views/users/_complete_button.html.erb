@@ -1,0 +1,5 @@
+<% if current_user.complete? %>
+  <h4>あなたは卒業しています</h4>
+<% else %>
+  <%= button_to "目標達成", {class: "btn btn-primary"}%>
+<% end %>
