@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :tasks
   get '/congratulations', to: 'congratulations#show'
   resources :footprints
+  get '/graduate', to: 'graduate#graduatepage'
 end
