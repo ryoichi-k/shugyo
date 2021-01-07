@@ -1,0 +1,21 @@
+<h1>タスク一覧</h1>
+<table class="table">
+<thead>
+  <tr>
+    <th scope="col">内容</th>
+    <th scope="col">登録日</th>
+  </tr>
+</thead>
+<tbody>
+<% @tasks.each do |task|%>
+<tr>
+  <td><%=task.name%></td>
+  <td><%=task.created_at%></td>
+  <td><%= link_to "削除", task, method: :delete, data:{ confirm: "タスク「#{task.name}を削除します。よろしいですか？」"}, class: 'btn btn-danger' %></td>
+</tr>
+<%end%>
+</tbody>
+</table>
+
+<p></p>
+<%= link_to "新規タスク作成", new_task_path, class: 'btn btn-primary' %>
