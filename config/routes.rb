@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :microposts,          only: [:create, :destroy]
   resources :tasks
   get '/congratulations', to: 'congratulations#show'
+  resources :footprints
 end
