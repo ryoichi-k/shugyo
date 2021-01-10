@@ -1,4 +1,5 @@
 class FootprintsController < ApplicationController
+  before_action :logged_in_user, only: [:new, :show, :create]
   def new
     @footprint = Footprint.new
   end
