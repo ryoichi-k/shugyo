@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_action :logged_in_user, only: [:index, :edit]
   def index
     @tasks = current_user.tasks
   end
@@ -27,8 +28,8 @@ class TasksController < ApplicationController
   end
 
   private
+
   def task_params
     params.require(:task).permit(:name)
   end
-                                 
 end
