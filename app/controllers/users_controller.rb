@@ -45,7 +45,7 @@ class UsersController < ApplicationController
   # ストロングパラメーター
   def user_params
     params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation, :goal, :message)
+                                 :password_confirmation, :goal, :message, :image)
   end
 
   # 正しいユーザーかどうか確認
