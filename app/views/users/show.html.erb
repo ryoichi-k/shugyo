@@ -11,7 +11,7 @@
   </aside>
   <div class="col-md-8">
     <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3>投稿(<%= @user.microposts.count %>)件</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>
