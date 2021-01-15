@@ -58,24 +58,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   
 #logo:hover {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
 /* top-page-image */
-.big-bg {
-    background-size: cover;
-    background-position: center center;
+.toppicture {
     background-repeat: no-repeat;
-    background-image: url(1564366_m.jpg);
-    min-height: 100vh;
-    min-width: 100vw;
+    background-image: url(businessmen-3753416_640.jpg);
+    width:auto;
+    
     
 }
 
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 section {
@@ -102,16 +100,22 @@ textarea {
   
   .right h1 {
     padding-top: 150px;
-    margin-right: 250px;
+    margin-right: 10px;
     margin-bottom: 0px;
     text-align: right;
   }
 
   .right h2 {
       text-align: right;
-      margin-right: 270px;
+      margin-right: 10px;
   }
-
+  .right p {
+    text-align: right;
+    margin-right: 150px;
+}
+  .top-appeal-sentence{
+    padding-top: 150px;
+  }
 /* forms */
 
 input, textarea, select, .uneditable-input {

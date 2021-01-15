@@ -19,17 +19,17 @@
     </div>
   </div>
 <% else %>
-<div class="big-bg">
+<div class="toppicture">
   <div class="right">
   <h1>こっそり努力をしませんか？</h1>
   <h2>
     目標を持って努力したい人々で集まって共に高め合いましょう。
-    <br>SHUGYOはあなたの成長をお手伝い致します。　　　　　　　
+    <br>SHUGYOはあなたの成長をお手伝いする隠れ家です。　　　　　　　
   </h2>
-  <div class="left">
-  <p><%= link_to "早速使ってみる", signup_path, class: "btn btn-lg btn-primary " %></p>
-  <p><%= link_to "ログイン", login_path, class: "btn btn-lg btn-outline-primary" %></p>
-  </div>
+  <p><%= link_to "早速使ってみる", signup_path, class: "btn btn-lg btn-success " %></p>
+  <p>すでにアカウントをお持ちの方は→<%= link_to "ログイン", login_path, class: "btn btn-lg btn-outline-primary" %></p>
   </div>
 </div>
+<div class="top-appeal-sentence">
+
 <% end %>
