@@ -1,6 +1,9 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
+      <% if @user.image? %>                                                              
+      <%= image_tag @user.image.url %>
+      <% end %>
       <h1>
         <%= @user.name %>
       </h1>
@@ -8,7 +11,7 @@
   </aside>
   <div class="col-md-8">
     <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3>投稿(<%= @user.microposts.count %>)件</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>

@@ -10,6 +10,7 @@
       </section>
       <section>
         <%= render 'tasks/task_list' %>
+        <%= link_to 'テスト' , controller: :users, action: :congratulations %>
       </section>
     </aside>
     <div class="col-md-8">
@@ -23,7 +24,7 @@
   <h1>こっそり努力をしませんか？</h1>
   <h2>
     目標を持って努力したい人々で集まって共に高め合いましょう。
-    <br>SHUGYOはあなたの成長をお手伝い致します。　　　　　　　　
+    <br>SHUGYOはあなたの成長をお手伝い致します。　　　　　　　
   </h2>
   <div class="left">
   <p><%= link_to "早速使ってみる", signup_path, class: "btn btn-lg btn-primary " %></p>

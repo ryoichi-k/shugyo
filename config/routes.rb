@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   resources :microposts, only: [:create, :destroy]
   resources :tasks
-  get '/congratulations', to: 'congratulations#show'
+  get '/congratulations', to: 'users#congratulations'
   resources :footprints
   get '/graduate', to: 'graduate#graduatepage'
 end
